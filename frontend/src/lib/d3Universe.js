@@ -97,7 +97,7 @@ export function createUniverse(container, graphData, { onNodeClick }) {
     node.exit().transition().duration(300).style('opacity', 0).remove()
 
     const nodeEnter = node.enter().append('g')
-      .attr('class', d => d.activity > 0.7 ? 'node breathe' : 'node')
+      .attr('class', 'node')
       .attr('transform', d => {
         const parent = currentNodes.find(n => n.id === d.parent_display)
         return `translate(${parent?.x ?? width / 2}, ${parent?.y ?? height / 2})`
@@ -119,27 +119,31 @@ export function createUniverse(container, graphData, { onNodeClick }) {
         onNodeClick(d)
       })
 
+    // Isolate breathing animation down to an inner graphics group
+    const innerNode = nodeEnter.append('g')
+      .attr('class', d => d.activity > 0.7 ? 'breathe' : '')
+    
     // Outer nebula (Performant concentric circle)
-    nodeEnter.append('circle').attr('class', 'outer1').attr('r', 0)
+    innerNode.append('circle').attr('class', 'outer1').attr('r', 0)
       .attr('fill', d => `rgba(${d.color}, ${0.05 + d.activity * 0.05})`)
     
     // Mid outer
-    nodeEnter.append('circle').attr('class', 'outer2').attr('r', 0)
+    innerNode.append('circle').attr('class', 'outer2').attr('r', 0)
       .attr('fill', d => `rgba(${d.color}, ${0.1 + d.activity * 0.1})`)
 
     // Mid inner
-    nodeEnter.append('circle').attr('class', 'mid').attr('r', 0)
+    innerNode.append('circle').attr('class', 'mid').attr('r', 0)
       .attr('fill', d => `rgba(${d.color}, ${0.2 + d.activity * 0.25})`)
     
     // Core
-    nodeEnter.append('circle').attr('class', 'core').attr('r', 0)
+    innerNode.append('circle').attr('class', 'core').attr('r', 0)
       .attr('fill', '#ffffff').attr('opacity', d => 0.6 + d.activity * 0.4)
 
     // Animate in
-    nodeEnter.selectAll('.outer1').transition().duration(800).attr('r', d => d.size * 2.5)
-    nodeEnter.selectAll('.outer2').transition().duration(800).attr('r', d => d.size * 1.5)
-    nodeEnter.selectAll('.mid').transition().duration(800).attr('r', d => d.size * 0.9)
-    nodeEnter.selectAll('.core').transition().duration(800).attr('r', d => d.size * 0.15)
+    innerNode.selectAll('.outer1').transition().duration(800).attr('r', d => d.size * 2.5)
+    innerNode.selectAll('.outer2').transition().duration(800).attr('r', d => d.size * 1.5)
+    innerNode.selectAll('.mid').transition().duration(800).attr('r', d => d.size * 0.9)
+    innerNode.selectAll('.core').transition().duration(800).attr('r', d => d.size * 0.15)
 
     const nodeMerged = nodeEnter.merge(node)
 
@@ -201,7 +205,7 @@ export function createUniverse(container, graphData, { onNodeClick }) {
 
     // Pulse animation on parent
     d3.selectAll('g.node').filter(d => d.id === parentId).selectAll('.mid')
-      .transition().duration(200).attr('r', parentNode.size * 1.5)
+      .transition().duration(200).attr('r', parentNode.size * 1.2)
       .transition().duration(400).attr('r', parentNode.size * 0.9)
 
     updateGraph()
