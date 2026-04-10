@@ -1,0 +1,89 @@
+{
+  "events": [
+    {
+      "id": "entry-2026-04-09-eigenvector",
+      "title": "3Blue1Brown - Eigenvectors intuition",
+      "type": "study_event",
+      "date": "2026-04-09",
+      "domains": [
+        "math",
+        "ai"
+      ],
+      "topics": [
+        "linear-algebra",
+        "eigenvector"
+      ],
+      "summary": "今天理解了 eigenvector 的直觉：  - 在线性变换下保持方向不变的向量",
+      "references": [
+        {
+          "type": "video",
+          "ref": "https://www.youtube.com/watch?v=PFDu9oVAE-g",
+          "title": "3Blue1Brown - Eigenvectors and Eigenvalues"
+        }
+      ]
+    },
+    {
+      "id": "entry-2026-04-09-learning-reflection",
+      "title": "学习的关键不是意志力，而是降低进入成本",
+      "type": "reflection",
+      "date": "2026-04-09",
+      "domains": [
+        "life"
+      ],
+      "topics": [
+        "learning-method"
+      ],
+      "summary": "我发现长期学习的关键不是意志力，而是降低进入成本。  - 每次开始学习前的准备工作越少，越容易坚持",
+      "references": []
+    },
+    {
+      "id": "entry-2026-04-08-transformer-attention",
+      "title": "Transformer 的 Multi-Head Attention 直觉",
+      "type": "study_event",
+      "date": "2026-04-08",
+      "domains": [
+        "ai"
+      ],
+      "topics": [
+        "transformer",
+        "llm"
+      ],
+      "summary": "学了 Transformer 的 Multi-Head Attention：  - QKV 本质上是信息检索系统 — Query 问问题，Key 提供索引，Value 给出内容",
+      "references": [
+        {
+          "type": "video",
+          "ref": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+          "title": "Transformer explained visually"
+        },
+        {
+          "type": "article",
+          "ref": "https://jalammar.github.io/illustrated-transformer/",
+          "title": "The Illustrated Transformer"
+        }
+      ]
+    },
+    {
+      "id": "entry-2026-04-07-tokenizer-project",
+      "title": "Built a tiny tokenizer demo",
+      "type": "project_log",
+      "date": "2026-04-07",
+      "domains": [
+        "projects",
+        "ai",
+        "cs"
+      ],
+      "topics": [
+        "tokenization",
+        "llm"
+      ],
+      "summary": "做了一个简单的 tokenizer demo：  - 实现了最基础的 BPE 算法",
+      "references": [
+        {
+          "type": "repo",
+          "ref": "https://github.com/example/mini-tokenizer",
+          "title": "mini-tokenizer"
+        }
+      ]
+    }
+  ]
+}

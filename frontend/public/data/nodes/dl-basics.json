@@ -1,0 +1,28 @@
+{
+  "id": "dl-basics",
+  "title": "Deep Learning Basics",
+  "kind": "topic",
+  "status": "active",
+  "color": "192, 132, 252",
+  "icon": null,
+  "size": 14,
+  "activity": 0,
+  "domains": [
+    "ai"
+  ],
+  "summary": "深度学习基础 — 反向传播、梯度下降、网络结构",
+  "entry_count": 0,
+  "hours_total": 0,
+  "structural_edges": [
+    {
+      "source": "ai",
+      "target": "dl-basics",
+      "type": "supports",
+      "weight": 0.8
+    }
+  ],
+  "emergent_edges": [],
+  "entries": [],
+  "notes": [],
+  "timeline": []
+}

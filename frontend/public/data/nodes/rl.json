@@ -1,0 +1,34 @@
+{
+  "id": "rl",
+  "title": "Reinforcement Learning",
+  "kind": "topic",
+  "status": "dormant",
+  "color": "192, 132, 252",
+  "icon": null,
+  "size": 12,
+  "activity": 0,
+  "domains": [
+    "ai"
+  ],
+  "summary": "强化学习 — MDP、策略梯度、PPO",
+  "entry_count": 0,
+  "hours_total": 0,
+  "structural_edges": [
+    {
+      "source": "ai",
+      "target": "rl",
+      "type": "supports",
+      "weight": 0.7
+    },
+    {
+      "source": "probability",
+      "target": "rl",
+      "type": "supports",
+      "weight": 0.6
+    }
+  ],
+  "emergent_edges": [],
+  "entries": [],
+  "notes": [],
+  "timeline": []
+}

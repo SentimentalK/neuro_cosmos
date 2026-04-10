@@ -1,0 +1,50 @@
+{
+  "id": "tokenization",
+  "title": "Tokenization",
+  "kind": "concept",
+  "status": "seed",
+  "color": "216, 180, 254",
+  "icon": null,
+  "size": 21.25,
+  "activity": 0.14637182171408417,
+  "domains": [
+    "ai",
+    "cs"
+  ],
+  "summary": "Tokenization — 文本分词与子词算法 (BPE, SentencePiece)",
+  "entry_count": 1,
+  "hours_total": 3,
+  "structural_edges": [
+    {
+      "source": "llm",
+      "target": "tokenization",
+      "type": "supports",
+      "weight": 0.6
+    }
+  ],
+  "emergent_edges": [
+    {
+      "source": "tokenization",
+      "target": "transformer",
+      "type": "related_to",
+      "weight": 0.5
+    }
+  ],
+  "entries": [
+    {
+      "id": "entry-2026-04-07-tokenizer-project",
+      "title": "Built a tiny tokenizer demo",
+      "date": "2026-04-07",
+      "type": "project_log",
+      "summary": "做了一个简单的 tokenizer demo：  - 实现了最基础的 BPE 算法"
+    }
+  ],
+  "notes": [],
+  "timeline": [
+    {
+      "date": "2026-04-07",
+      "event": "Built a tiny tokenizer demo",
+      "type": "project_log"
+    }
+  ]
+}

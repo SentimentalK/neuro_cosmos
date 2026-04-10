@@ -1,0 +1,97 @@
+{
+  "id": "llm",
+  "title": "Large Language Models",
+  "kind": "topic",
+  "status": "active",
+  "color": "192, 132, 252",
+  "icon": null,
+  "size": 42.5,
+  "activity": 0.6304424629649585,
+  "domains": [
+    "ai"
+  ],
+  "summary": "LLM 系统 — Transformer、Embedding、Tokenization",
+  "entry_count": 2,
+  "hours_total": 5,
+  "structural_edges": [
+    {
+      "source": "ai",
+      "target": "llm",
+      "type": "supports",
+      "weight": 1.3
+    },
+    {
+      "source": "llm",
+      "target": "transformer",
+      "type": "supports",
+      "weight": 1.2
+    },
+    {
+      "source": "llm",
+      "target": "embedding",
+      "type": "supports",
+      "weight": 1.1
+    },
+    {
+      "source": "llm",
+      "target": "tokenization",
+      "type": "supports",
+      "weight": 0.6
+    }
+  ],
+  "emergent_edges": [
+    {
+      "source": "linear-algebra",
+      "target": "llm",
+      "type": "related_to",
+      "weight": 1
+    },
+    {
+      "source": "eigenvector",
+      "target": "llm",
+      "type": "related_to",
+      "weight": 0.5
+    },
+    {
+      "source": "math",
+      "target": "llm",
+      "type": "related_to",
+      "weight": 0.5
+    }
+  ],
+  "entries": [
+    {
+      "id": "entry-2026-04-07-tokenizer-project",
+      "title": "Built a tiny tokenizer demo",
+      "date": "2026-04-07",
+      "type": "project_log",
+      "summary": "做了一个简单的 tokenizer demo：  - 实现了最基础的 BPE 算法"
+    },
+    {
+      "id": "entry-2026-04-08-transformer-attention",
+      "title": "Transformer 的 Multi-Head Attention 直觉",
+      "date": "2026-04-08",
+      "type": "study_event",
+      "summary": "学了 Transformer 的 Multi-Head Attention：  - QKV 本质上是信息检索系统 — Query 问问题，Key 提供索引，Value 给出内容"
+    }
+  ],
+  "notes": [
+    {
+      "id": "note-transformer",
+      "title": "Transformer Architecture",
+      "content_html": "## Core Idea\n\nTransformer 用 self-attention 机制取代了 RNN 的序列依赖，实现了并行化训练。\n\n## Key Components\n\n- **Self-Attention**: 让每个 token 可以直接 attend to 所有其他 token\n- **Multi-Head**: 多组 QKV 投影并行，捕捉不同类型的关系\n- **Positional Encoding**: 因为去掉了序列结构，需要显式注入位置信息\n- **Feed-Forward Network**: 每层 attention 后跟一个 FFN 做非线性变换\n- **Layer Normalization**: 稳定训练\n\n## Why It Matters\n\nTransformer 是 GPT / BERT / LLaMA 等所有现代 LLM 的基础架构。\n理解它等于理解整个 LLM 技术栈的地基。"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-04-08",
+      "event": "Transformer 的 Multi-Head Attention 直觉",
+      "type": "study_event"
+    },
+    {
+      "date": "2026-04-07",
+      "event": "Built a tiny tokenizer demo",
+      "type": "project_log"
+    }
+  ]
+}

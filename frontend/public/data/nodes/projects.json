@@ -1,0 +1,67 @@
+{
+  "id": "projects",
+  "title": "Projects",
+  "kind": "domain",
+  "status": "active",
+  "color": "236, 72, 153",
+  "icon": "🚀",
+  "size": 33.25,
+  "activity": 0.29274364342816833,
+  "domains": [
+    "projects"
+  ],
+  "summary": "个人项目与实践",
+  "entry_count": 1,
+  "hours_total": 3,
+  "structural_edges": [
+    {
+      "source": "projects",
+      "target": "ai",
+      "type": "applied_in",
+      "weight": 0.6
+    },
+    {
+      "source": "projects",
+      "target": "cs",
+      "type": "applied_in",
+      "weight": 0.5
+    }
+  ],
+  "emergent_edges": [
+    {
+      "source": "learning-method",
+      "target": "projects",
+      "type": "related_to",
+      "weight": 0.5
+    },
+    {
+      "source": "life",
+      "target": "projects",
+      "type": "related_to",
+      "weight": 0.5
+    },
+    {
+      "source": "projects",
+      "target": "transformer",
+      "type": "related_to",
+      "weight": 0.5
+    }
+  ],
+  "entries": [
+    {
+      "id": "entry-2026-04-07-tokenizer-project",
+      "title": "Built a tiny tokenizer demo",
+      "date": "2026-04-07",
+      "type": "project_log",
+      "summary": "做了一个简单的 tokenizer demo：  - 实现了最基础的 BPE 算法"
+    }
+  ],
+  "notes": [],
+  "timeline": [
+    {
+      "date": "2026-04-07",
+      "event": "Built a tiny tokenizer demo",
+      "type": "project_log"
+    }
+  ]
+}

@@ -9,8 +9,9 @@ import path from 'path';
 import yaml from 'js-yaml';
 import matter from 'gray-matter';
 
-const ROOT = process.cwd();
-const OUT_DIR = path.join(ROOT, 'public', 'data');
+const FRONTEND_DIR = process.cwd();
+const ROOT = path.resolve(FRONTEND_DIR, '..');
+const OUT_DIR = path.join(FRONTEND_DIR, 'public', 'data');
 const NODES_OUT = path.join(OUT_DIR, 'nodes');
 
 // ─── Helpers ───────────────────────────────────────────

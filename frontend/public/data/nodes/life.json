@@ -1,0 +1,49 @@
+{
+  "id": "life",
+  "title": "Life",
+  "kind": "domain",
+  "status": "active",
+  "color": "249, 115, 22",
+  "icon": "🌱",
+  "size": 23.5,
+  "activity": 0.41247268627239675,
+  "domains": [
+    "life"
+  ],
+  "summary": "生活与人生思考 — 学习方法、系统思维、反思",
+  "entry_count": 1,
+  "hours_total": 0,
+  "structural_edges": [
+    {
+      "source": "life",
+      "target": "learning-method",
+      "type": "supports",
+      "weight": 0.8
+    }
+  ],
+  "emergent_edges": [
+    {
+      "source": "life",
+      "target": "projects",
+      "type": "related_to",
+      "weight": 0.5
+    }
+  ],
+  "entries": [
+    {
+      "id": "entry-2026-04-09-learning-reflection",
+      "title": "学习的关键不是意志力，而是降低进入成本",
+      "date": "2026-04-09",
+      "type": "reflection",
+      "summary": "我发现长期学习的关键不是意志力，而是降低进入成本。  - 每次开始学习前的准备工作越少，越容易坚持"
+    }
+  ],
+  "notes": [],
+  "timeline": [
+    {
+      "date": "2026-04-09",
+      "event": "学习的关键不是意志力，而是降低进入成本",
+      "type": "reflection"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "ai",
+  "title": "Artificial Intelligence",
+  "kind": "domain",
+  "status": "active",
+  "color": "168, 85, 247",
+  "icon": "🤖",
+  "size": 58.5,
+  "activity": 1,
+  "domains": [
+    "ai"
+  ],
+  "summary": "AI 领域主节点 — LLM、RL、深度学习基础",
+  "entry_count": 3,
+  "hours_total": 6.5,
+  "structural_edges": [
+    {
+      "source": "ai",
+      "target": "llm",
+      "type": "supports",
+      "weight": 1.3
+    },
+    {
+      "source": "ai",
+      "target": "rl",
+      "type": "supports",
+      "weight": 0.7
+    },
+    {
+      "source": "ai",
+      "target": "dl-basics",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "math",
+      "target": "ai",
+      "type": "supports",
+      "weight": 0.7
+    },
+    {
+      "source": "ai",
+      "target": "cs",
+      "type": "related_to",
+      "weight": 0.5
+    },
+    {
+      "source": "projects",
+      "target": "ai",
+      "type": "applied_in",
+      "weight": 0.6
+    }
+  ],
+  "emergent_edges": [
+    {
+      "source": "ai",
+      "target": "embedding",
+      "type": "related_to",
+      "weight": 1
+    },
+    {
+      "source": "ai",
+      "target": "transformer",
+      "type": "related_to",
+      "weight": 1
+    },
+    {
+      "source": "ai",
+      "target": "linear-algebra",
+      "type": "related_to",
+      "weight": 0.5
+    }
+  ],
+  "entries": [
+    {
+      "id": "entry-2026-04-07-tokenizer-project",
+      "title": "Built a tiny tokenizer demo",
+      "date": "2026-04-07",
+      "type": "project_log",
+      "summary": "做了一个简单的 tokenizer demo：  - 实现了最基础的 BPE 算法"
+    },
+    {
+      "id": "entry-2026-04-08-transformer-attention",
+      "title": "Transformer 的 Multi-Head Attention 直觉",
+      "date": "2026-04-08",
+      "type": "study_event",
+      "summary": "学了 Transformer 的 Multi-Head Attention：  - QKV 本质上是信息检索系统 — Query 问问题，Key 提供索引，Value 给出内容"
+    },
+    {
+      "id": "entry-2026-04-09-eigenvector",
+      "title": "3Blue1Brown - Eigenvectors intuition",
+      "date": "2026-04-09",
+      "type": "study_event",
+      "summary": "今天理解了 eigenvector 的直觉：  - 在线性变换下保持方向不变的向量"
+    }
+  ],
+  "notes": [],
+  "timeline": [
+    {
+      "date": "2026-04-09",
+      "event": "3Blue1Brown - Eigenvectors intuition",
+      "type": "study_event"
+    },
+    {
+      "date": "2026-04-08",
+      "event": "Transformer 的 Multi-Head Attention 直觉",
+      "type": "study_event"
+    },
+    {
+      "date": "2026-04-07",
+      "event": "Built a tiny tokenizer demo",
+      "type": "project_log"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "eigenvector",
+  "title": "Eigenvector",
+  "kind": "concept",
+  "status": "active",
+  "color": "147, 197, 253",
+  "icon": null,
+  "size": 20,
+  "activity": 0.366642387797686,
+  "domains": [
+    "math"
+  ],
+  "summary": "特征向量 — 在线性变换下保持方向不变的向量",
+  "entry_count": 1,
+  "hours_total": 1.5,
+  "structural_edges": [
+    {
+      "source": "linear-algebra",
+      "target": "eigenvector",
+      "type": "supports",
+      "weight": 0.9
+    }
+  ],
+  "emergent_edges": [
+    {
+      "source": "eigenvector",
+      "target": "embedding",
+      "type": "related_to",
+      "weight": 0.5
+    },
+    {
+      "source": "eigenvector",
+      "target": "transformer",
+      "type": "related_to",
+      "weight": 0.5
+    },
+    {
+      "source": "eigenvector",
+      "target": "llm",
+      "type": "related_to",
+      "weight": 0.5
+    }
+  ],
+  "entries": [
+    {
+      "id": "entry-2026-04-09-eigenvector",
+      "title": "3Blue1Brown - Eigenvectors intuition",
+      "date": "2026-04-09",
+      "type": "study_event",
+      "summary": "今天理解了 eigenvector 的直觉：  - 在线性变换下保持方向不变的向量"
+    }
+  ],
+  "notes": [],
+  "timeline": [
+    {
+      "date": "2026-04-09",
+      "event": "3Blue1Brown - Eigenvectors intuition",
+      "type": "study_event"
+    }
+  ]
+}

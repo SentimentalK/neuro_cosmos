@@ -1,0 +1,34 @@
+{
+  "id": "probability",
+  "title": "Probability & Statistics",
+  "kind": "topic",
+  "status": "dormant",
+  "color": "96, 165, 250",
+  "icon": null,
+  "size": 12,
+  "activity": 0,
+  "domains": [
+    "math"
+  ],
+  "summary": "概率与统计 — 分布、贝叶斯、随机过程",
+  "entry_count": 0,
+  "hours_total": 0,
+  "structural_edges": [
+    {
+      "source": "math",
+      "target": "probability",
+      "type": "supports",
+      "weight": 0.8
+    },
+    {
+      "source": "probability",
+      "target": "rl",
+      "type": "supports",
+      "weight": 0.6
+    }
+  ],
+  "emergent_edges": [],
+  "entries": [],
+  "notes": [],
+  "timeline": []
+}

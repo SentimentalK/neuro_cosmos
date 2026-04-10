@@ -1,0 +1,60 @@
+{
+  "id": "embedding",
+  "title": "Embedding",
+  "kind": "concept",
+  "status": "active",
+  "color": "216, 180, 254",
+  "icon": null,
+  "size": 10,
+  "activity": 0,
+  "domains": [
+    "ai",
+    "math"
+  ],
+  "summary": "Embedding — 将离散对象映射到连续向量空间",
+  "entry_count": 0,
+  "hours_total": 0,
+  "structural_edges": [
+    {
+      "source": "llm",
+      "target": "embedding",
+      "type": "supports",
+      "weight": 1.1
+    },
+    {
+      "source": "embedding",
+      "target": "linear-algebra",
+      "type": "related_to",
+      "weight": 1
+    }
+  ],
+  "emergent_edges": [
+    {
+      "source": "eigenvector",
+      "target": "embedding",
+      "type": "related_to",
+      "weight": 0.5
+    },
+    {
+      "source": "math",
+      "target": "embedding",
+      "type": "related_to",
+      "weight": 0.5
+    },
+    {
+      "source": "ai",
+      "target": "embedding",
+      "type": "related_to",
+      "weight": 1
+    },
+    {
+      "source": "transformer",
+      "target": "embedding",
+      "type": "related_to",
+      "weight": 0.5
+    }
+  ],
+  "entries": [],
+  "notes": [],
+  "timeline": []
+}

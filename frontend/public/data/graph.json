@@ -1,0 +1,485 @@
+{
+  "nodes": [
+    {
+      "id": "eigenvector",
+      "title": "Eigenvector",
+      "kind": "concept",
+      "status": "active",
+      "color": "147, 197, 253",
+      "icon": null,
+      "size": 20,
+      "activity": 0.366642387797686,
+      "level": 3,
+      "domains": [
+        "math"
+      ],
+      "parent_display": "linear-algebra",
+      "summary": "特征向量 — 在线性变换下保持方向不变的向量"
+    },
+    {
+      "id": "embedding",
+      "title": "Embedding",
+      "kind": "concept",
+      "status": "active",
+      "color": "216, 180, 254",
+      "icon": null,
+      "size": 10,
+      "activity": 0,
+      "level": 3,
+      "domains": [
+        "ai",
+        "math"
+      ],
+      "parent_display": "llm",
+      "summary": "Embedding — 将离散对象映射到连续向量空间"
+    },
+    {
+      "id": "tokenization",
+      "title": "Tokenization",
+      "kind": "concept",
+      "status": "seed",
+      "color": "216, 180, 254",
+      "icon": null,
+      "size": 21.25,
+      "activity": 0.14637182171408417,
+      "level": 3,
+      "domains": [
+        "ai",
+        "cs"
+      ],
+      "parent_display": "llm",
+      "summary": "Tokenization — 文本分词与子词算法 (BPE, SentencePiece)"
+    },
+    {
+      "id": "transformer",
+      "title": "Transformer",
+      "kind": "concept",
+      "status": "active",
+      "color": "216, 180, 254",
+      "icon": null,
+      "size": 23.25,
+      "activity": 0.33769881953679026,
+      "level": 3,
+      "domains": [
+        "ai"
+      ],
+      "parent_display": "llm",
+      "summary": "Transformer 架构 — self-attention、multi-head、位置编码"
+    },
+    {
+      "id": "ai",
+      "title": "Artificial Intelligence",
+      "kind": "domain",
+      "status": "active",
+      "color": "168, 85, 247",
+      "icon": "🤖",
+      "size": 58.5,
+      "activity": 1,
+      "level": 1,
+      "domains": [
+        "ai"
+      ],
+      "parent_display": null,
+      "summary": "AI 领域主节点 — LLM、RL、深度学习基础"
+    },
+    {
+      "id": "cs",
+      "title": "Computer Science",
+      "kind": "domain",
+      "status": "active",
+      "color": "20, 184, 166",
+      "icon": "💻",
+      "size": 31.25,
+      "activity": 0.29274364342816833,
+      "level": 1,
+      "domains": [
+        "cs"
+      ],
+      "parent_display": null,
+      "summary": "计算机科学 — 系统、算法、工程"
+    },
+    {
+      "id": "life",
+      "title": "Life",
+      "kind": "domain",
+      "status": "active",
+      "color": "249, 115, 22",
+      "icon": "🌱",
+      "size": 23.5,
+      "activity": 0.41247268627239675,
+      "level": 1,
+      "domains": [
+        "life"
+      ],
+      "parent_display": null,
+      "summary": "生活与人生思考 — 学习方法、系统思维、反思"
+    },
+    {
+      "id": "math",
+      "title": "Mathematics",
+      "kind": "domain",
+      "status": "active",
+      "color": "59, 130, 246",
+      "icon": "📐",
+      "size": 30,
+      "activity": 0.366642387797686,
+      "level": 1,
+      "domains": [
+        "math"
+      ],
+      "parent_display": null,
+      "summary": "数学基础 — 线性代数、概率、优化"
+    },
+    {
+      "id": "projects",
+      "title": "Projects",
+      "kind": "domain",
+      "status": "active",
+      "color": "236, 72, 153",
+      "icon": "🚀",
+      "size": 33.25,
+      "activity": 0.29274364342816833,
+      "level": 1,
+      "domains": [
+        "projects"
+      ],
+      "parent_display": null,
+      "summary": "个人项目与实践"
+    },
+    {
+      "id": "dl-basics",
+      "title": "Deep Learning Basics",
+      "kind": "topic",
+      "status": "active",
+      "color": "192, 132, 252",
+      "icon": null,
+      "size": 14,
+      "activity": 0,
+      "level": 2,
+      "domains": [
+        "ai"
+      ],
+      "parent_display": "ai",
+      "summary": "深度学习基础 — 反向传播、梯度下降、网络结构"
+    },
+    {
+      "id": "learning-method",
+      "title": "Learning Method",
+      "kind": "method",
+      "status": "active",
+      "color": "251, 191, 36",
+      "icon": null,
+      "size": 21.5,
+      "activity": 0.41247268627239675,
+      "level": 2,
+      "domains": [
+        "life"
+      ],
+      "parent_display": "life",
+      "summary": "学习方法论 — 如何高效学习、降低进入成本"
+    },
+    {
+      "id": "linear-algebra",
+      "title": "Linear Algebra",
+      "kind": "topic",
+      "status": "active",
+      "color": "96, 165, 250",
+      "icon": null,
+      "size": 26,
+      "activity": 0.366642387797686,
+      "level": 2,
+      "domains": [
+        "math"
+      ],
+      "parent_display": "math",
+      "summary": "线性代数 — 矩阵、向量空间、特征值"
+    },
+    {
+      "id": "llm",
+      "title": "Large Language Models",
+      "kind": "topic",
+      "status": "active",
+      "color": "192, 132, 252",
+      "icon": null,
+      "size": 42.5,
+      "activity": 0.6304424629649585,
+      "level": 2,
+      "domains": [
+        "ai"
+      ],
+      "parent_display": "ai",
+      "summary": "LLM 系统 — Transformer、Embedding、Tokenization"
+    },
+    {
+      "id": "probability",
+      "title": "Probability & Statistics",
+      "kind": "topic",
+      "status": "dormant",
+      "color": "96, 165, 250",
+      "icon": null,
+      "size": 12,
+      "activity": 0,
+      "level": 2,
+      "domains": [
+        "math"
+      ],
+      "parent_display": "math",
+      "summary": "概率与统计 — 分布、贝叶斯、随机过程"
+    },
+    {
+      "id": "rl",
+      "title": "Reinforcement Learning",
+      "kind": "topic",
+      "status": "dormant",
+      "color": "192, 132, 252",
+      "icon": null,
+      "size": 12,
+      "activity": 0,
+      "level": 2,
+      "domains": [
+        "ai"
+      ],
+      "parent_display": "ai",
+      "summary": "强化学习 — MDP、策略梯度、PPO"
+    }
+  ],
+  "edges": [
+    {
+      "source": "ai",
+      "target": "llm",
+      "type": "supports",
+      "weight": 1.3,
+      "is_structural": true
+    },
+    {
+      "source": "ai",
+      "target": "rl",
+      "type": "supports",
+      "weight": 0.7,
+      "is_structural": true
+    },
+    {
+      "source": "ai",
+      "target": "dl-basics",
+      "type": "supports",
+      "weight": 0.8,
+      "is_structural": true
+    },
+    {
+      "source": "math",
+      "target": "linear-algebra",
+      "type": "supports",
+      "weight": 1,
+      "is_structural": true
+    },
+    {
+      "source": "math",
+      "target": "probability",
+      "type": "supports",
+      "weight": 0.8,
+      "is_structural": true
+    },
+    {
+      "source": "llm",
+      "target": "transformer",
+      "type": "supports",
+      "weight": 1.2,
+      "is_structural": true
+    },
+    {
+      "source": "llm",
+      "target": "embedding",
+      "type": "supports",
+      "weight": 1.1,
+      "is_structural": true
+    },
+    {
+      "source": "llm",
+      "target": "tokenization",
+      "type": "supports",
+      "weight": 0.6,
+      "is_structural": true
+    },
+    {
+      "source": "linear-algebra",
+      "target": "eigenvector",
+      "type": "supports",
+      "weight": 0.9,
+      "is_structural": true
+    },
+    {
+      "source": "life",
+      "target": "learning-method",
+      "type": "supports",
+      "weight": 0.8,
+      "is_structural": true
+    },
+    {
+      "source": "math",
+      "target": "ai",
+      "type": "supports",
+      "weight": 0.7,
+      "is_structural": true
+    },
+    {
+      "source": "ai",
+      "target": "cs",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": true
+    },
+    {
+      "source": "projects",
+      "target": "ai",
+      "type": "applied_in",
+      "weight": 0.6,
+      "is_structural": true
+    },
+    {
+      "source": "projects",
+      "target": "cs",
+      "type": "applied_in",
+      "weight": 0.5,
+      "is_structural": true
+    },
+    {
+      "source": "embedding",
+      "target": "linear-algebra",
+      "type": "related_to",
+      "weight": 1,
+      "is_structural": true
+    },
+    {
+      "source": "probability",
+      "target": "rl",
+      "type": "supports",
+      "weight": 0.6,
+      "is_structural": true
+    },
+    {
+      "source": "linear-algebra",
+      "target": "transformer",
+      "type": "related_to",
+      "weight": 1,
+      "is_structural": false
+    },
+    {
+      "source": "linear-algebra",
+      "target": "llm",
+      "type": "related_to",
+      "weight": 1,
+      "is_structural": false
+    },
+    {
+      "source": "eigenvector",
+      "target": "embedding",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "eigenvector",
+      "target": "transformer",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "eigenvector",
+      "target": "llm",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "math",
+      "target": "embedding",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "math",
+      "target": "transformer",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "math",
+      "target": "llm",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "ai",
+      "target": "embedding",
+      "type": "related_to",
+      "weight": 1,
+      "is_structural": false
+    },
+    {
+      "source": "ai",
+      "target": "transformer",
+      "type": "related_to",
+      "weight": 1,
+      "is_structural": false
+    },
+    {
+      "source": "learning-method",
+      "target": "projects",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "life",
+      "target": "projects",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "transformer",
+      "target": "embedding",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "ai",
+      "target": "linear-algebra",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "tokenization",
+      "target": "transformer",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "projects",
+      "target": "transformer",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    },
+    {
+      "source": "cs",
+      "target": "transformer",
+      "type": "related_to",
+      "weight": 0.5,
+      "is_structural": false
+    }
+  ],
+  "meta": {
+    "compiled_at": "2026-04-10T02:47:07.053Z",
+    "total_entries": 4,
+    "total_nodes": 15,
+    "total_edges": 33
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "nodes": [
+    {
+      "id": "eigenvector",
+      "title": "Eigenvector",
+      "kind": "concept",
+      "status": "active",
+      "domains": [
+        "math"
+      ],
+      "size": 20,
+      "activity": 0.366642387797686,
+      "summary": "特征向量 — 在线性变换下保持方向不变的向量",
+      "entry_count": 1
+    },
+    {
+      "id": "embedding",
+      "title": "Embedding",
+      "kind": "concept",
+      "status": "active",
+      "domains": [
+        "ai",
+        "math"
+      ],
+      "size": 10,
+      "activity": 0,
+      "summary": "Embedding — 将离散对象映射到连续向量空间",
+      "entry_count": 0
+    },
+    {
+      "id": "tokenization",
+      "title": "Tokenization",
+      "kind": "concept",
+      "status": "seed",
+      "domains": [
+        "ai",
+        "cs"
+      ],
+      "size": 21.25,
+      "activity": 0.14637182171408417,
+      "summary": "Tokenization — 文本分词与子词算法 (BPE, SentencePiece)",
+      "entry_count": 1
+    },
+    {
+      "id": "transformer",
+      "title": "Transformer",
+      "kind": "concept",
+      "status": "active",
+      "domains": [
+        "ai"
+      ],
+      "size": 23.25,
+      "activity": 0.33769881953679026,
+      "summary": "Transformer 架构 — self-attention、multi-head、位置编码",
+      "entry_count": 1
+    },
+    {
+      "id": "ai",
+      "title": "Artificial Intelligence",
+      "kind": "domain",
+      "status": "active",
+      "domains": [
+        "ai"
+      ],
+      "size": 58.5,
+      "activity": 1,
+      "summary": "AI 领域主节点 — LLM、RL、深度学习基础",
+      "entry_count": 3
+    },
+    {
+      "id": "cs",
+      "title": "Computer Science",
+      "kind": "domain",
+      "status": "active",
+      "domains": [
+        "cs"
+      ],
+      "size": 31.25,
+      "activity": 0.29274364342816833,
+      "summary": "计算机科学 — 系统、算法、工程",
+      "entry_count": 1
+    },
+    {
+      "id": "life",
+      "title": "Life",
+      "kind": "domain",
+      "status": "active",
+      "domains": [
+        "life"
+      ],
+      "size": 23.5,
+      "activity": 0.41247268627239675,
+      "summary": "生活与人生思考 — 学习方法、系统思维、反思",
+      "entry_count": 1
+    },
+    {
+      "id": "math",
+      "title": "Mathematics",
+      "kind": "domain",
+      "status": "active",
+      "domains": [
+        "math"
+      ],
+      "size": 30,
+      "activity": 0.366642387797686,
+      "summary": "数学基础 — 线性代数、概率、优化",
+      "entry_count": 1
+    },
+    {
+      "id": "projects",
+      "title": "Projects",
+      "kind": "domain",
+      "status": "active",
+      "domains": [
+        "projects"
+      ],
+      "size": 33.25,
+      "activity": 0.29274364342816833,
+      "summary": "个人项目与实践",
+      "entry_count": 1
+    },
+    {
+      "id": "dl-basics",
+      "title": "Deep Learning Basics",
+      "kind": "topic",
+      "status": "active",
+      "domains": [
+        "ai"
+      ],
+      "size": 14,
+      "activity": 0,
+      "summary": "深度学习基础 — 反向传播、梯度下降、网络结构",
+      "entry_count": 0
+    },
+    {
+      "id": "learning-method",
+      "title": "Learning Method",
+      "kind": "method",
+      "status": "active",
+      "domains": [
+        "life"
+      ],
+      "size": 21.5,
+      "activity": 0.41247268627239675,
+      "summary": "学习方法论 — 如何高效学习、降低进入成本",
+      "entry_count": 1
+    },
+    {
+      "id": "linear-algebra",
+      "title": "Linear Algebra",
+      "kind": "topic",
+      "status": "active",
+      "domains": [
+        "math"
+      ],
+      "size": 26,
+      "activity": 0.366642387797686,
+      "summary": "线性代数 — 矩阵、向量空间、特征值",
+      "entry_count": 1
+    },
+    {
+      "id": "llm",
+      "title": "Large Language Models",
+      "kind": "topic",
+      "status": "active",
+      "domains": [
+        "ai"
+      ],
+      "size": 42.5,
+      "activity": 0.6304424629649585,
+      "summary": "LLM 系统 — Transformer、Embedding、Tokenization",
+      "entry_count": 2
+    },
+    {
+      "id": "probability",
+      "title": "Probability & Statistics",
+      "kind": "topic",
+      "status": "dormant",
+      "domains": [
+        "math"
+      ],
+      "size": 12,
+      "activity": 0,
+      "summary": "概率与统计 — 分布、贝叶斯、随机过程",
+      "entry_count": 0
+    },
+    {
+      "id": "rl",
+      "title": "Reinforcement Learning",
+      "kind": "topic",
+      "status": "dormant",
+      "domains": [
+        "ai"
+      ],
+      "size": 12,
+      "activity": 0,
+      "summary": "强化学习 — MDP、策略梯度、PPO",
+      "entry_count": 0
+    }
+  ]
+}
