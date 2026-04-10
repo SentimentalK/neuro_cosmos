@@ -1,11 +1,11 @@
 version: '3.8'
 
 services:
-  galaxy:
+  neuro-cosmos:
     build:
       context: .
       dockerfile: frontend/Dockerfile
-    container_name: galaxy-web
+    container_name: neuro-cosmos-web
     ports:
       - "5173:80"
     restart: unless-stopped

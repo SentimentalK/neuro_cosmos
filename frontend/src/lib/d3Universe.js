@@ -1,6 +1,6 @@
 /**
  * D3 Universe Engine
- * Renders the neural galaxy force-directed graph with nebula-style nodes
+ * Renders the Neuro Cosmos force-directed graph with nebula-style nodes
  * Completely independent from React — communicates via callbacks
  */
 

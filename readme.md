@@ -1,8 +1,8 @@
-# Galaxy Knowledge Organism 
+# Neuro Cosmos Knowledge Organism
 *(V1 System Architecture & User Guide)*
 
 ## 1. 系统核心理念 (The Core Concept)
-我们摒弃了传统的“树状文件夹”和枯燥的“清单”。Galaxy 是一个**由数据驱动生长的神经网络体系**。
+我们摒弃了传统的“树状文件夹”和枯燥的“清单”。Neuro Cosmos 是一个**由数据驱动生长的神经网络体系**。
 你在这里留下的每一条记录，不是进了死寂的文件夹，而是变成了一股“能量”，给宇宙中的那些“概念球体”注入体积（沉淀度）和亮度（近期活跃度）。
 
 ---

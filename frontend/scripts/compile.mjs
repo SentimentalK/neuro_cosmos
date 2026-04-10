@@ -1,5 +1,5 @@
 /**
- * Galaxy Compile Script
+ * Neuro Cosmos Compile Script
  * Reads nodes/*.yaml, entries/*.md, notes/*.md, edges/manual.yaml
  * Outputs: public/data/{graph.json, node-index.json, timeline.json, nodes/<id>.json}
  */
