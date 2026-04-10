@@ -1,0 +1,11 @@
+id: transformer
+title: Transformer
+kind: concept
+status: active
+color: "216, 180, 254"
+visibility: public
+seed_weight: 0.6
+domains:
+  - ai
+parent_display: llm
+summary: "Transformer 架构 — self-attention、multi-head、位置编码"

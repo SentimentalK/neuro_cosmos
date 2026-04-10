@@ -1,0 +1,68 @@
+edges:
+  # Structural: domain-to-topic display hierarchy
+  - source: ai
+    target: llm
+    type: supports
+    weight: 1.0
+  - source: ai
+    target: rl
+    type: supports
+    weight: 0.7
+  - source: ai
+    target: dl-basics
+    type: supports
+    weight: 0.8
+  - source: math
+    target: linear-algebra
+    type: supports
+    weight: 1.0
+  - source: math
+    target: probability
+    type: supports
+    weight: 0.8
+  - source: llm
+    target: transformer
+    type: supports
+    weight: 0.9
+  - source: llm
+    target: embedding
+    type: supports
+    weight: 0.8
+  - source: llm
+    target: tokenization
+    type: supports
+    weight: 0.6
+  - source: linear-algebra
+    target: eigenvector
+    type: supports
+    weight: 0.9
+  - source: life
+    target: learning-method
+    type: supports
+    weight: 0.8
+
+  # Cross-domain bridges
+  - source: math
+    target: ai
+    type: supports
+    weight: 0.7
+  - source: ai
+    target: cs
+    type: related_to
+    weight: 0.5
+  - source: projects
+    target: ai
+    type: applied_in
+    weight: 0.6
+  - source: projects
+    target: cs
+    type: applied_in
+    weight: 0.5
+  - source: embedding
+    target: linear-algebra
+    type: related_to
+    weight: 0.7
+  - source: probability
+    target: rl
+    type: supports
+    weight: 0.6

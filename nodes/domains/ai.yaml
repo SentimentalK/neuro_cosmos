@@ -1,0 +1,9 @@
+id: ai
+title: Artificial Intelligence
+kind: domain
+status: active
+color: "168, 85, 247"
+icon: 🤖
+visibility: public
+seed_weight: 1.2
+summary: "AI 领域主节点 — LLM、RL、深度学习基础"

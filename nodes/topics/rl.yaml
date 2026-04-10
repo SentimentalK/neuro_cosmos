@@ -1,0 +1,11 @@
+id: rl
+title: Reinforcement Learning
+kind: topic
+status: dormant
+color: "192, 132, 252"
+visibility: public
+seed_weight: 0.6
+domains:
+  - ai
+parent_display: ai
+summary: "强化学习 — MDP、策略梯度、PPO"

@@ -1,0 +1,11 @@
+id: llm
+title: Large Language Models
+kind: topic
+status: active
+color: "192, 132, 252"
+visibility: public
+seed_weight: 0.9
+domains:
+  - ai
+parent_display: ai
+summary: "LLM 系统 — Transformer、Embedding、Tokenization"

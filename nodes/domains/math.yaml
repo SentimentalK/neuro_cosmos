@@ -1,0 +1,9 @@
+id: math
+title: Mathematics
+kind: domain
+status: active
+color: "59, 130, 246"
+icon: 📐
+visibility: public
+seed_weight: 1.0
+summary: "数学基础 — 线性代数、概率、优化"

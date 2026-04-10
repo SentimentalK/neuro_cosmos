@@ -1,0 +1,9 @@
+id: projects
+title: Projects
+kind: domain
+status: active
+color: "236, 72, 153"
+icon: 🚀
+visibility: public
+seed_weight: 1.0
+summary: "个人项目与实践"

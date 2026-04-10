@@ -1,0 +1,12 @@
+id: embedding
+title: Embedding
+kind: concept
+status: active
+color: "216, 180, 254"
+visibility: public
+seed_weight: 0.5
+domains:
+  - ai
+  - math
+parent_display: llm
+summary: "Embedding — 将离散对象映射到连续向量空间"

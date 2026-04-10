@@ -1,0 +1,11 @@
+id: linear-algebra
+title: Linear Algebra
+kind: topic
+status: active
+color: "96, 165, 250"
+visibility: public
+seed_weight: 0.8
+domains:
+  - math
+parent_display: math
+summary: "线性代数 — 矩阵、向量空间、特征值"

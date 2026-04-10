@@ -1,0 +1,9 @@
+id: life
+title: Life
+kind: domain
+status: active
+color: "249, 115, 22"
+icon: 🌱
+visibility: public
+seed_weight: 0.8
+summary: "生活与人生思考 — 学习方法、系统思维、反思"

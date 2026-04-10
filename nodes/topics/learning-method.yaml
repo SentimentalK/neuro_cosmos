@@ -1,0 +1,11 @@
+id: learning-method
+title: Learning Method
+kind: method
+status: active
+color: "251, 191, 36"
+visibility: public
+seed_weight: 0.7
+domains:
+  - life
+parent_display: life
+summary: "学习方法论 — 如何高效学习、降低进入成本"

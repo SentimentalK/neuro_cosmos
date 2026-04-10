@@ -1,0 +1,11 @@
+id: dl-basics
+title: Deep Learning Basics
+kind: topic
+status: active
+color: "192, 132, 252"
+visibility: public
+seed_weight: 0.7
+domains:
+  - ai
+parent_display: ai
+summary: "深度学习基础 — 反向传播、梯度下降、网络结构"

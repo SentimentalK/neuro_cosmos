@@ -1,0 +1,11 @@
+id: probability
+title: Probability & Statistics
+kind: topic
+status: dormant
+color: "96, 165, 250"
+visibility: public
+seed_weight: 0.6
+domains:
+  - math
+parent_display: math
+summary: "概率与统计 — 分布、贝叶斯、随机过程"

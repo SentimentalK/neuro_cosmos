@@ -1,0 +1,9 @@
+id: cs
+title: Computer Science
+kind: domain
+status: active
+color: "20, 184, 166"
+icon: 💻
+visibility: public
+seed_weight: 0.9
+summary: "计算机科学 — 系统、算法、工程"

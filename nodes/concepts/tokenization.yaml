@@ -1,0 +1,12 @@
+id: tokenization
+title: Tokenization
+kind: concept
+status: seed
+color: "216, 180, 254"
+visibility: public
+seed_weight: 0.4
+domains:
+  - ai
+  - cs
+parent_display: llm
+summary: "Tokenization — 文本分词与子词算法 (BPE, SentencePiece)"
