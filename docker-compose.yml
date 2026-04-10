@@ -11,5 +11,5 @@ services:
     container_name: watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-    command: --cleanup --interval 60 neuro-cosmos-web
+    command: --cleanup --interval 60 --api-version 1.44 neuro-cosmos-web
     restart: unless-stopped
