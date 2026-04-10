@@ -2,10 +2,16 @@ version: '3.8'
 
 services:
   neuro-cosmos:
-    build:
-      context: .
-      dockerfile: frontend/Dockerfile
+    image: ghcr.io/sentimentalk/neuro_cosmos:master
     container_name: neuro-cosmos-web
     ports:
       - "5173:80"
+    restart: unless-stopped
+
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    command: --cleanup --poll-interval 60 neuro-cosmos-web
     restart: unless-stopped
