@@ -44,7 +44,14 @@ export function createUniverse(container, graphData, { onNodeClick }) {
   // Main group
   const g = svg.append('g')
 
-
+  // Filters
+  const defs = svg.append('defs')
+  defs.append('filter').attr('id', 'blur-heavy')
+    .attr('x', '-100%').attr('y', '-100%').attr('width', '300%').attr('height', '300%')
+    .append('feGaussianBlur').attr('stdDeviation', '20')
+  defs.append('filter').attr('id', 'blur-medium')
+    .attr('x', '-50%').attr('y', '-50%').attr('width', '200%').attr('height', '200%')
+    .append('feGaussianBlur').attr('stdDeviation', '8')
 
   // Foreground stars
   const starGroup = g.append('g').attr('class', 'stars-fg')
@@ -123,25 +130,22 @@ export function createUniverse(container, graphData, { onNodeClick }) {
     const innerNode = nodeEnter.append('g')
       .attr('class', d => d.activity > 0.7 ? 'breathe' : '')
     
-    // Outer nebula (Performant concentric circle)
-    innerNode.append('circle').attr('class', 'outer1').attr('r', 0)
-      .attr('fill', d => `rgba(${d.color}, ${0.05 + d.activity * 0.05})`)
-    
-    // Mid outer
-    innerNode.append('circle').attr('class', 'outer2').attr('r', 0)
-      .attr('fill', d => `rgba(${d.color}, ${0.1 + d.activity * 0.1})`)
-
-    // Mid inner
+    // Outer nebula
+    innerNode.append('circle').attr('class', 'outer').attr('r', 0)
+      .attr('fill', d => `rgba(${d.color}, ${0.1 + d.activity * 0.15})`)
+      .style('filter', 'url(#blur-heavy)')
+      
+    // Mid energy
     innerNode.append('circle').attr('class', 'mid').attr('r', 0)
-      .attr('fill', d => `rgba(${d.color}, ${0.2 + d.activity * 0.25})`)
+      .attr('fill', d => `rgba(${d.color}, ${0.2 + d.activity * 0.3})`)
+      .style('filter', 'url(#blur-medium)')
     
     // Core
     innerNode.append('circle').attr('class', 'core').attr('r', 0)
-      .attr('fill', '#ffffff').attr('opacity', d => 0.6 + d.activity * 0.4)
+      .attr('fill', '#ffffff').attr('opacity', d => 0.5 + d.activity * 0.5)
 
     // Animate in
-    innerNode.selectAll('.outer1').transition().duration(800).attr('r', d => d.size * 2.5)
-    innerNode.selectAll('.outer2').transition().duration(800).attr('r', d => d.size * 1.5)
+    innerNode.selectAll('.outer').transition().duration(800).attr('r', d => d.size * 1.8)
     innerNode.selectAll('.mid').transition().duration(800).attr('r', d => d.size * 0.9)
     innerNode.selectAll('.core').transition().duration(800).attr('r', d => d.size * 0.15)
 

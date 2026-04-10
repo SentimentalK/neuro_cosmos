@@ -1,5 +1,8 @@
 services:
   neuro-cosmos:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
     image: ghcr.io/sentimentalk/neuro_cosmos:master
     container_name: neuro-cosmos-web
     ports:
@@ -9,6 +12,8 @@ services:
   watchtower:
     image: containrrr/watchtower
     container_name: watchtower
+    profiles:
+      - ${ENV_PROFILE:-dev}
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
     command: --cleanup --interval 60 --api-version 1.44 neuro-cosmos-web
