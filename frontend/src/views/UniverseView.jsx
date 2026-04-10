@@ -22,12 +22,16 @@ export default function UniverseView({ active, selectedNode, onNodeClick, onClos
     return () => universe.destroy()
   }, [data])
 
-  // Update canExpand when selected node changes
+  // Update canExpand and camera pan when selected node changes
   useEffect(() => {
     if (selectedNode && universeRef.current) {
       setCanExpand(universeRef.current.hasHiddenChildren(selectedNode.id))
+      universeRef.current.focusNode(selectedNode.id)
     } else {
       setCanExpand(false)
+      if (universeRef.current) {
+        universeRef.current.resetView()
+      }
     }
   }, [selectedNode])
 

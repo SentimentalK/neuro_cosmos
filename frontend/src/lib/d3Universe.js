@@ -217,6 +217,21 @@ export function createUniverse(container, graphData, { onNodeClick }) {
   // Initial render
   updateGraph()
 
+  function focusNode(nodeId) {
+    const node = currentNodes.find(n => n.id === nodeId)
+    if (!node) return
+    const scale = 1.2
+    const tx = width / 4 - node.x * scale
+    const ty = height / 2 - node.y * scale
+    svg.transition().duration(750)
+      .call(zoomBehavior.transform, d3.zoomIdentity.translate(tx, ty).scale(scale))
+  }
+
+  function resetView() {
+    svg.transition().duration(750)
+      .call(zoomBehavior.transform, d3.zoomIdentity)
+  }
+
   // Resize handler
   const handleResize = () => {
     const w = container.clientWidth
@@ -231,6 +246,8 @@ export function createUniverse(container, graphData, { onNodeClick }) {
   return {
     expandNode,
     hasHiddenChildren,
+    focusNode,
+    resetView,
     destroy() {
       window.removeEventListener('resize', handleResize)
       simulation.stop()
