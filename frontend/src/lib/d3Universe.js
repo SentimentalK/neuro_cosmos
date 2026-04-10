@@ -44,14 +44,7 @@ export function createUniverse(container, graphData, { onNodeClick }) {
   // Main group
   const g = svg.append('g')
 
-  // Filters
-  const defs = svg.append('defs')
-  defs.append('filter').attr('id', 'blur-heavy')
-    .attr('x', '-100%').attr('y', '-100%').attr('width', '300%').attr('height', '300%')
-    .append('feGaussianBlur').attr('stdDeviation', '20')
-  defs.append('filter').attr('id', 'blur-medium')
-    .attr('x', '-50%').attr('y', '-50%').attr('width', '200%').attr('height', '200%')
-    .append('feGaussianBlur').attr('stdDeviation', '8')
+
 
   // Foreground stars
   const starGroup = g.append('g').attr('class', 'stars-fg')
@@ -126,20 +119,25 @@ export function createUniverse(container, graphData, { onNodeClick }) {
         onNodeClick(d)
       })
 
-    // Outer nebula
-    nodeEnter.append('circle').attr('class', 'outer').attr('r', 0)
-      .attr('fill', d => `rgba(${d.color}, ${0.1 + d.activity * 0.15})`)
-      .style('filter', 'url(#blur-heavy)')
-    // Mid energy
+    // Outer nebula (Performant concentric circle)
+    nodeEnter.append('circle').attr('class', 'outer1').attr('r', 0)
+      .attr('fill', d => `rgba(${d.color}, ${0.05 + d.activity * 0.05})`)
+    
+    // Mid outer
+    nodeEnter.append('circle').attr('class', 'outer2').attr('r', 0)
+      .attr('fill', d => `rgba(${d.color}, ${0.1 + d.activity * 0.1})`)
+
+    // Mid inner
     nodeEnter.append('circle').attr('class', 'mid').attr('r', 0)
-      .attr('fill', d => `rgba(${d.color}, ${0.2 + d.activity * 0.3})`)
-      .style('filter', 'url(#blur-medium)')
+      .attr('fill', d => `rgba(${d.color}, ${0.2 + d.activity * 0.25})`)
+    
     // Core
     nodeEnter.append('circle').attr('class', 'core').attr('r', 0)
-      .attr('fill', '#ffffff').attr('opacity', d => 0.5 + d.activity * 0.5)
+      .attr('fill', '#ffffff').attr('opacity', d => 0.6 + d.activity * 0.4)
 
     // Animate in
-    nodeEnter.selectAll('.outer').transition().duration(800).attr('r', d => d.size * 1.8)
+    nodeEnter.selectAll('.outer1').transition().duration(800).attr('r', d => d.size * 2.5)
+    nodeEnter.selectAll('.outer2').transition().duration(800).attr('r', d => d.size * 1.5)
     nodeEnter.selectAll('.mid').transition().duration(800).attr('r', d => d.size * 0.9)
     nodeEnter.selectAll('.core').transition().duration(800).attr('r', d => d.size * 0.15)
 
